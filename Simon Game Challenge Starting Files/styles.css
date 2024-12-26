@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #030406;
 }
 
 #level-title {
@@ -20,8 +20,10 @@ body {
 }
 
 .container {
-  display: block;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 #heart{
   background-color:#011F3F;
