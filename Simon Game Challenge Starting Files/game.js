@@ -18,7 +18,7 @@ function nextSequence(){
     $("#level-title").text("Level "+level);
     var randomNumber=Math.floor(Math.random()*4);
     var randomChosencolor=buttoncolors[randomNumber];
-    gamepattern.push(randomChosencolor);
+    gamepattern.push(randomChosencolor); 
     $("#"+randomChosencolor).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosencolor); 
 }
@@ -61,9 +61,7 @@ function checkAnswer(currentlevel){
         }
         document.getElementById("high-score").innerHTML = "High Score: " + highScore;
         startover();
-        
     }
-    
 }
 function startover(){
     level=0;
